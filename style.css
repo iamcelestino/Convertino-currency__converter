@@ -1,0 +1,98 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Montserrat:ital,wght@0,400;0,500;1,400&family=Tektur&display=swap');
+
+*, *::before, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        coral, orange
+    );
+    color: white;
+    font-family: 'Agdasima', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+main {
+    padding: 0.8rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    margin: auto;
+    background-color:blue;
+    padding: 3.5rem 0 ;
+    border-radius: 10px;
+}
+
+form{
+    padding: 2rem 1rem;
+}
+
+form .description {
+    text-align: center;
+}
+
+span {
+    color: rgb(249, 168, 38);
+    font-weight: bold;
+}
+
+.description h1, .description p {
+    margin-bottom: 1.3rem;
+}
+
+select, input {
+    border: none;
+}
+
+.from-container, .to-container {
+    background-color: white;
+    margin-bottom: 3px;
+    padding: 0.8rem;
+    border: 3px solid rgb(249, 168, 38);
+    border-radius: 5px;
+    display: flex;
+}
+
+.to-container{
+    padding: 10px;
+}
+
+input {
+    width: 75%;
+    padding: 2px;
+}
+
+
+img {
+    width: 100%;
+    padding-left: 1rem;
+}
+
+#rate {
+    color: black;
+}
+
+
+@media screen and (min-width: 43.75em){
+    main {
+        max-width: 60.625em;
+        margin: auto;
+    }
+    .wrapper{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
